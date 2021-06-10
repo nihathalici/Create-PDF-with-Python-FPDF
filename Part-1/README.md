@@ -14,8 +14,10 @@ How to create a pdf with python using the simple library FPDF2. This is part 1 o
 * Permission Error
 * Text Placement
 
+
 * Watch on YouTube:
 https://www.youtube.com/watch?v=q70xzDG6nls&t=2s
+
 
 * GitHub Repo:
 https://github.com/bvalgard/create-pdf-with-python-fpdf2
