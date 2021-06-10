@@ -12,4 +12,15 @@ pdf.add_page()
 # specify font
 # fonts ('times', 'courier', 'helvetica', 'symbol', 'zpfdingbats')
 # 'B' (bold), 'U' (underline), 'I' (italics), '' (regular), combination (i.e., ('BU'))
-pdf.set_font()
+pdf.set_font('helvetica', '', 16)
+
+# Add text
+# w = width
+# h = height
+# txt = your text
+# ln (0 False; 1 True - move cursor down to next line)
+# border(0 False; 1 True - add border around cell)
+pdf.cell(120, 100, 'Hello World!', ln=True, border=True)
+pdf.cell(80, 10, 'Good Bye World!')
+
+pdf.output('pdf_1.pdf')
