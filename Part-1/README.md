@@ -18,6 +18,10 @@ How to create a pdf with python using the simple library FPDF2. This is part 1 o
 * Watch on YouTube:
 https://www.youtube.com/watch?v=q70xzDG6nls&t=2s
 
-
 * GitHub Repo:
 https://github.com/bvalgard/create-pdf-with-python-fpdf2
+
+Sample Output
+========================================================
+![Sample output Create PDF with Python FPDF | Part-1](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-1/pdf_1.pdf)
+
