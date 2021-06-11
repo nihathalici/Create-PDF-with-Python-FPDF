@@ -23,5 +23,5 @@ https://github.com/bvalgard/create-pdf-with-python-fpdf2
 
 Sample Output
 ========================================================
-![Sample output Create PDF with Python FPDF | Part-1](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-1/pdf_1.pdf)
+![Sample output Create PDF with Python FPDF | Part-1](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-1/pdf_1.png)
 
