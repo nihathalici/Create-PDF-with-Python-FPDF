@@ -39,6 +39,38 @@ class PDF(FPDF):
         # page number
         self.cell(0, 10, f'Page {self.page_no()}/nb', align = 'C')
 
+    # Adding chapter title to start of each chapter
+    def chapter_title(self, ch_num, ch_title):
+        # set font
+        self.set_font('helvetica', '', 12)
+        # background color
+        self.set_fill_color(200, 220, 255)
+        # Chapter title
+        chapter_title = f'Chapter {ch_num} : {ch_title}'
+        self.cell(0, 5, chapter_title, ln=1, fill=1)
+        # line break
+        self.ln()
+
+    # Chapter content
+    def chapter_body(self, name):
+        # read text file
+        with open(name, 'rb') as fh:
+            txt = fh.read().decode('latin-1')
+        # set font
+        self.set_font('times', '', 12)
+        # insert text
+        self.multi_cell(0, 5, txt)
+        # line break
+        self.ln()
+        # end each chapter
+        self.set_font('times', 'I', 12)
+        self.cell(0, 5, 'END OF CHAPTER')
+
+    def print_chapter(self, ch_num, ch_title, name):
+        self.add_page()
+        self.chapter_title(ch_num, ch_title)
+        self.chapter_body(name)
+
 # create a PDF object
 pdf = PDF('P', 'mm', 'Letter')
 
@@ -49,17 +81,10 @@ pdf.alias_nb_pages(alias='nb')
 pdf.set_auto_page_break(auto=True, margin = 15)
 
 # Add a page
-pdf.add_page()
+#pdf.add_page()
 
-# specify font
-pdf.set_font('helvetica', 'BIU', 16)
-
-pdf.set_font('times', '', 12)
-
-for i in range(1,41):
-    pdf.cell(0, 10, f'This is line {i} :D', ln=True)
-
-pdf.cell(80, 10, 'Good Bye World!')
+pdf.print_chapter(1, 'A RUNAWAY REEF','chp1.txt')
+pdf.print_chapter(2, 'THE PROS AND CONS', 'chp2.txt')
 
 pdf.output('pdf_3.pdf')
 
