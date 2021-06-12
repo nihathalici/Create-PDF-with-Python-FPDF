@@ -98,6 +98,6 @@ https://github.com/bvalgard/create-pdf-with-python-fpdf2
 
 Sample Output
 ========================================================
-![Sample output Create PDF with Python FPDF | Part-2](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-2/part_2-png.png)
+![Sample output Create PDF with Python FPDF | Part-3](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-3/part_3.png)
 
 
