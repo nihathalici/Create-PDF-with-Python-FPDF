@@ -66,7 +66,7 @@ pdf.output('pdf_3.pdf')
 ```
 
 * Watch on YouTube:
-https://www.youtube.com/watch?v=JhQVD7Y1bsA
+https://www.youtube.com/watch?v=FcrW-ESdY-A
 
 * GitHub Repo:
 https://github.com/bvalgard/create-pdf-with-python-fpdf2
