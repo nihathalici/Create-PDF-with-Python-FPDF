@@ -35,8 +35,6 @@ pdf.set_auto_page_break(auto=True, margin = 15)
 pdf.add_page()
 
 # specify font
-pdf.set_font('helvetica', 'BIU', 16)
-
 pdf.set_font('times', '', 12)
 
 for i in range(1,41):
