@@ -1,4 +1,4 @@
-# Create PDF with Python FPDF | Part-1
+# Create PDF with Python FPDF | Part-2
 
 How to create a pdf with python using the simple library FPDF2. This is part 2 of a 4 part series where we go over how to create a pdf with Python and eventually automate the creation of reports and invoices. 
 
