@@ -8,7 +8,8 @@ How to create a pdf with python using the simple library FPDF2. This is part 4 o
 
 part_4.py
 ========================================================
-```Python3from fpdf import FPDF
+```Python3
+from fpdf import FPDF
 
 title = '20,000 Leagues Under the Sea'
 
@@ -106,7 +107,6 @@ pdf.print_chapter(2, 'THE PROS AND CONS', 'chp2.txt', ch2_link)
 
 pdf.output('pdf_4.pdf')
 
-
 ```
 
 * Watch on YouTube:
@@ -118,5 +118,3 @@ https://github.com/bvalgard/create-pdf-with-python-fpdf2
 Sample Output
 ========================================================
 ![Sample output Create PDF with Python FPDF | Part-4](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-4/part_4.png)
-
-
