@@ -8,8 +8,7 @@ How to create a pdf with python using the simple library FPDF2. This is part 4 o
 
 part_4.py
 ========================================================
-```Python3
-from fpdf import FPDF
+```Python3from fpdf import FPDF
 
 title = '20,000 Leagues Under the Sea'
 
@@ -42,7 +41,9 @@ class PDF(FPDF):
         self.cell(0, 10, f'Page {self.page_no()}/nb', align = 'C')
 
     # Adding chapter title to start of each chapter
-    def chapter_title(self, ch_num, ch_title):
+    def chapter_title(self, ch_num, ch_title, link):
+        # Set link location
+        self.set_link(link)
         # set font
         self.set_font('helvetica', '', 12)
         # background color
@@ -68,9 +69,9 @@ class PDF(FPDF):
         self.set_font('times', 'I', 12)
         self.cell(0, 5, 'END OF CHAPTER')
 
-    def print_chapter(self, ch_num, ch_title, name):
+    def print_chapter(self, ch_num, ch_title, name, link):
         self.add_page()
-        self.chapter_title(ch_num, ch_title)
+        self.chapter_title(ch_num, ch_title, link)
         self.chapter_body(name)
 
 # create a PDF object
@@ -80,17 +81,31 @@ pdf = PDF('P', 'mm', 'Letter')
 pdf.set_title(title)
 pdf.set_author('Jules Verne')
 
+# Create Links
+website = 'https://www.youtube.com/channel/UC17QKsysOmZ7oJepmmcUTvA'
+ch1_link = pdf.add_link()
+ch2_link = pdf.add_link()
+
 # Set auto page break
 pdf.set_auto_page_break(auto=True, margin = 15)
 
-# Add a page
+# Add Page
 pdf.add_page()
 pdf.image('background_image.png', x = -0.5, w = pdf.w + 1)
 
-pdf.print_chapter(1, 'A RUNAWAY REEF','chp1.txt')
-pdf.print_chapter(2, 'THE PROS AND CONS', 'chp2.txt')
+# Attach Links
+pdf.cell(0, 10, 'Tutorial Source', ln = 1, link = website)
+pdf.cell(0, 10, 'Chapter 1', ln = 1, link = ch1_link)
+pdf.cell(0, 10, 'Chapter 2', ln = 1, link = ch2_link)
+
+# get total page numbers
+pdf.alias_nb_pages(alias='nb')
+
+pdf.print_chapter(1, 'A RUNAWAY REEF','chp1.txt', ch1_link)
+pdf.print_chapter(2, 'THE PROS AND CONS', 'chp2.txt', ch2_link)
 
 pdf.output('pdf_4.pdf')
+
 
 ```
 
@@ -102,6 +117,6 @@ https://github.com/bvalgard/create-pdf-with-python-fpdf2
 
 Sample Output
 ========================================================
-![Sample output Create PDF with Python FPDF | Part-4](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-3/part_3.png)
+![Sample output Create PDF with Python FPDF | Part-4](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-4/part_4.png)
 
 
