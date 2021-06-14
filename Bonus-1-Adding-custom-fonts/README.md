@@ -164,6 +164,6 @@ https://github.com/bvalgard/create-pdf-with-python-fpdf2
 
 Sample Output
 ========================================================
-![Sample output Create PDF with Python FPDF | BONUS-1: Adding custom fonts](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-4/part_4.png)
+![Sample output Create PDF with Python FPDF | BONUS-1: Adding custom fonts](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Bonus-1-Adding-custom-fonts/part_1.png)
 
-![Sample output Create PDF with Python FPDF | BONUS-1: Adding custom fonts](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Part-4/part_4.png)
+![Sample output Create PDF with Python FPDF | BONUS-1: Adding custom fonts](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Bonus-1-Adding-custom-fonts/part_4.png)
