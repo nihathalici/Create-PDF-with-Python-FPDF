@@ -8,6 +8,7 @@ How to create a pdf with python using the simple library FPDF2.
 
 part_1.py
 ========================================================
+
 ```Python3
 from fpdf import FPDF
 
