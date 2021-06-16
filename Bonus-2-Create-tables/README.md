@@ -14,3 +14,8 @@ https://www.youtube.com/watch?v=euNvxWaRQMY
 
 * GitHub Repo:
 https://github.com/bvalgard/create-pdf-with-python-fpdf2
+
+
+Sample Output
+========================================================
+![Sample output Create Table with FPDF](https://github.com/nihathalici/Create-PDF-with-Python-FPDF/blob/main/Bonus-2-Create-tables/table_class.png)
